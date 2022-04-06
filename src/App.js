@@ -5,9 +5,12 @@ import { getAuth } from "firebase/auth";
 const auth = getAuth(app);
 
 function App() {
+  const handleGoogleSignIn = () => {
+    console.log("working");
+  };
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <button onClick={handleGoogleSignIn}>Google Sign In</button>
     </div>
   );
 }
